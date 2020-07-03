@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>extension</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="text-center border rounded-0 border-dark" id="linkpage"
+        style="padding: 10px;background-color: #c3c2a2;">
+        <h3 style="color: rgb(118,126,133);">MiniScreen</h3>
+        <hr>
+        <p style="color: red;" id='error'></p>
+        <input type="url" id="linkinput" placeholder="URL" name="url" inputmode="url" required="">
+        <div style="padding: 5px;"><button class="btn btn-success" id="link" type="submit">Enter</button></div>
+    </div>
+    <div class="text-center" id="framepage" style="display: none;">
+        <div class="row no-gutters">
+            <div class="col text-center">
+                <button class="btn btn-danger btn-block" type="button" id="back">Back&nbsp;
+                    <i class="typcn typcn-arrow-back"></i>
+                </button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-warning btn-block" type="button" id="newtab">New Tab&nbsp;
+                    <i class="typcn typcn-tabs-outline"></i>
+                </button>
+            </div>
+        </div>
+        <iframe id="myframe" src="" width="400" height="400"></iframe>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="link.js"></script>
+</body>
+
+</html>
