@@ -87,5 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('linkpage').style.display = 'block';
     document.getElementById('framepage').style.display = 'none';
     document.getElementById('linkinput').value = "";
+    $('[data-toggle="tooltip"]').tooltip('hide');
   })
 })
