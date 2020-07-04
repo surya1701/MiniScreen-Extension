@@ -18,12 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("myframe").src = String(document.getElementById('linkinput').value);
       document.getElementById('linkpage').style.display = 'none';
       document.getElementById('framepage').style.display = 'initial';
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-        $(this).tooltip('enable');
-      });
-      setTimeout(function () {
-        $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-      }, 3000);
+      $('[data-toggle="tooltip"]').tooltip('show');
       new_tab = String(document.getElementById('linkinput').value);
     }
   })
@@ -33,12 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("myframe").src = "https://www.google.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-      $(this).tooltip('enable');
-    });
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-    }, 3000);
+    $('[data-toggle="tooltip"]').tooltip('show');
     new_tab = "https://www.google.com/";
   })
   var lyt = document.getElementById('lyt');
@@ -47,12 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("myframe").src = "https://www.youtube.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-      $(this).tooltip('enable');
-    });
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-    }, 3000);
+    $('[data-toggle="tooltip"]').tooltip('show');
     new_tab = "https://www.youtube.com/";
   })
   var lgm = document.getElementById('lli');
@@ -61,12 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("myframe").src = "https://www.linkedin.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-      $(this).tooltip('enable');
-    });
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-    }, 3000);
+    $('[data-toggle="tooltip"]').tooltip('show');
     new_tab = "https://www.linkedin.com/"
   })
   var lws = document.getElementById('lws');
@@ -75,12 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("myframe").src = "https://web.whatsapp.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-      $(this).tooltip('enable');
-    });
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-    }, 3000);
+    $('[data-toggle="tooltip"]').tooltip('show');
     new_tab = "https://web.whatsapp.com/";
   })
   var lgt = document.getElementById('lsf');
@@ -89,12 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("myframe").src = "https://stackoverflow.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-      $(this).tooltip('enable');
-    });
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-    }, 3000);
+    $('[data-toggle="tooltip"]').tooltip('show');
     new_tab = "https://stackoverflow.com/";
   })
   var lam = document.getElementById('lam');
@@ -103,12 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("myframe").src = "https://www.amazon.in/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('show').tooltip('disable').one('mouseout', function () {
-      $(this).tooltip('enable');
-    });
-    setTimeout(function () {
-      $('[data-toggle="tooltip"]').tooltip().eq(0).tooltip('hide').tooltip('enable');
-    }, 3000);
+    $('[data-toggle="tooltip"]').tooltip('show');
     new_tab = "https://www.amazon.in/";
   })
 
