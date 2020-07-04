@@ -18,56 +18,56 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("myframe").src = String(document.getElementById('linkinput').value);
       document.getElementById('linkpage').style.display = 'none';
       document.getElementById('framepage').style.display = 'initial';
+      new_tab = String(document.getElementById('linkinput').value);
     }
-    new_tab = String(document.getElementById('linkinput').value);
   })
   var lgoogle = document.getElementById('lgoogle');
   lgoogle.addEventListener('click', function () {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src ="https://www.google.com/";
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      new_tab = "https://www.google.com/";
+    document.getElementById('error').innerHTML = "";
+    document.getElementById("myframe").src = "https://www.google.com/";
+    document.getElementById('linkpage').style.display = 'none';
+    document.getElementById('framepage').style.display = 'initial';
+    new_tab = "https://www.google.com/";
   })
   var lyt = document.getElementById('lyt');
   lyt.addEventListener('click', function () {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src ="https://www.youtube.com/";
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      new_tab = "https://www.youtube.com/";
+    document.getElementById('error').innerHTML = "";
+    document.getElementById("myframe").src = "https://www.youtube.com/";
+    document.getElementById('linkpage').style.display = 'none';
+    document.getElementById('framepage').style.display = 'initial';
+    new_tab = "https://www.youtube.com/";
   })
   var lgm = document.getElementById('lgm');
   lgm.addEventListener('click', function () {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src ="https://www.google.com/intl/en-GB/gmail/about/#";
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      new_tab = "https://www.google.com/intl/en-GB/gmail/about/#"
+    document.getElementById('error').innerHTML = "";
+    document.getElementById("myframe").src = "https://www.google.com/intl/en-GB/gmail/about/#";
+    document.getElementById('linkpage').style.display = 'none';
+    document.getElementById('framepage').style.display = 'initial';
+    new_tab = "https://www.google.com/intl/en-GB/gmail/about/#"
   })
   var lws = document.getElementById('lws');
   lws.addEventListener('click', function () {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src ="https://web.whatsapp.com/";
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      new_tab = "https://web.whatsapp.com/";
+    document.getElementById('error').innerHTML = "";
+    document.getElementById("myframe").src = "https://web.whatsapp.com/";
+    document.getElementById('linkpage').style.display = 'none';
+    document.getElementById('framepage').style.display = 'initial';
+    new_tab = "https://web.whatsapp.com/";
   })
   var lgt = document.getElementById('lgt');
   lgt.addEventListener('click', function () {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src ="https://github.com/";
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      new_tab = "https://github.com/";
+    document.getElementById('error').innerHTML = "";
+    document.getElementById("myframe").src = "https://github.com/";
+    document.getElementById('linkpage').style.display = 'none';
+    document.getElementById('framepage').style.display = 'initial';
+    new_tab = "https://github.com/";
   })
   var lam = document.getElementById('lam');
   lam.addEventListener('click', function () {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src ="https://www.amazon.in/";
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      new_tab = "https://www.amazon.in/";
+    document.getElementById('error').innerHTML = "";
+    document.getElementById("myframe").src = "https://www.amazon.in/";
+    document.getElementById('linkpage').style.display = 'none';
+    document.getElementById('framepage').style.display = 'initial';
+    new_tab = "https://www.amazon.in/";
   })
 
   var newtab = document.getElementById('newtab');

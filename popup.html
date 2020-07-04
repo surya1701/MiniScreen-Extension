@@ -7,23 +7,47 @@
     <title>extension</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="text-center border rounded-0 border-dark" id="linkpage"
         style="padding: 10px;background-color: #c3c2a2;">
-        <h3 style="color: rgb(118,126,133);">MiniScreen</h3>
+        <h2 style="color: rgb(74,78,81); font-family: 'Fredoka One', cursive;">MiniScreen</h2>
         <hr>
         <p style="color: red;" id='error'></p>
-        <input type="url" id="linkinput" placeholder="URL" name="url" inputmode="url" required="">
+        <div class="input-append btn-group">
+            <input <input type="url" id="linkinput" placeholder="URL" name="url" inputmode="url" required=""
+                autocomplete="off">
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+            </a>
+            <div role="menu" class="dropdown-menu text-center">
+                <h5 class="dropdown-header" style="color: whitesmoke;font-family: 'Raleway', sans-serif;">Suggestions
+                </h5>
+                <div class="row no-gutters">
+                    <div class="col dropdown-item" id="lgoogle"><img src="assets/img/google.svg" width="24" height="24">
+                    </div>
+                    <div class="col dropdown-item" id="lyt"><img src="assets/img/youtube.svg" width="24" height="24">
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col dropdown-item" id="lgm"><img src="assets/img/gmail.svg" width="24" height="24">
+                    </div>
+                    <div class="col dropdown-item" id="lws"><img src="assets/img/whatsapp.svg" width="24" height="24">
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col dropdown-item" id="lam"><img src="assets/img/amazon.svg" width="24" height="24">
+                    </div>
+                    <div class="col dropdown-item" id="lgt"><img src="assets/img/github.svg" width="24" height="24">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div style="padding: 5px;"><button class="btn btn-success" id="link" type="submit">Enter</button></div>
-        <img src="google.svg" id="lgoogle"width="48" height="48">
-        <img src="youtube.svg" id="lyt"width="48" height="48">
-        <img src="gmail.svg" id="lgm"width="48" height="48">
-        <img src="whatsapp.svg" id="lws"width="48" height="48">
-        <img src="amazon.svg" id="lam"width="48" height="48">
-        <img src="github.svg" id="lgt"width="48" height="48">
     </div>
     <div class="text-center" id="framepage" style="display: none;">
         <div class="row no-gutters">
@@ -40,9 +64,9 @@
         </div>
         <iframe id="myframe" src="" width="400" height="400"></iframe>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="link.js"></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/link.js"></script>
 </body>
 
 </html>
