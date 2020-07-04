@@ -53,7 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('framepage').style.display = 'initial';
       new_tab = "https://web.whatsapp.com/";
   })
-  
+  var lgt = document.getElementById('lgt');
+  lgt.addEventListener('click', function () {
+      document.getElementById('error').innerHTML = "";
+      document.getElementById("myframe").src ="https://github.com/";
+      document.getElementById('linkpage').style.display = 'none';
+      document.getElementById('framepage').style.display = 'initial';
+      new_tab = "https://github.com/";
+  })
+  var lam = document.getElementById('lam');
+  lam.addEventListener('click', function () {
+      document.getElementById('error').innerHTML = "";
+      document.getElementById("myframe").src ="https://www.amazon.in/";
+      document.getElementById('linkpage').style.display = 'none';
+      document.getElementById('framepage').style.display = 'initial';
+      new_tab = "https://www.amazon.in/";
+  })
 
   var newtab = document.getElementById('newtab');
   newtab.addEventListener('click', function () {
