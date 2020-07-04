@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('framepage').style.display = 'initial';
     new_tab = "https://www.youtube.com/";
   })
-  var lgm = document.getElementById('lgm');
+  var lgm = document.getElementById('lse');
   lgm.addEventListener('click', function () {
     document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://www.google.com/intl/en-GB/gmail/about/#";
+    document.getElementById("myframe").src = "https://stackexchange.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    new_tab = "https://www.google.com/intl/en-GB/gmail/about/#"
+    new_tab = "https://stackexchange.com/"
   })
   var lws = document.getElementById('lws');
   lws.addEventListener('click', function () {
