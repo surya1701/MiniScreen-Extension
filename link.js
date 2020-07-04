@@ -7,6 +7,7 @@ function is_url(str) {
     return true;
   }
 }
+var new_tab = "";
 document.addEventListener('DOMContentLoaded', function () {
   var link = document.getElementById('link');
   link.addEventListener('click', function () {
@@ -18,11 +19,45 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('linkpage').style.display = 'none';
       document.getElementById('framepage').style.display = 'initial';
     }
+    new_tab = String(document.getElementById('linkinput').value);
   })
+  var lgoogle = document.getElementById('lgoogle');
+  lgoogle.addEventListener('click', function () {
+      document.getElementById('error').innerHTML = "";
+      document.getElementById("myframe").src ="https://www.google.com/";
+      document.getElementById('linkpage').style.display = 'none';
+      document.getElementById('framepage').style.display = 'initial';
+      new_tab = "https://www.google.com/";
+  })
+  var lyt = document.getElementById('lyt');
+  lyt.addEventListener('click', function () {
+      document.getElementById('error').innerHTML = "";
+      document.getElementById("myframe").src ="https://www.youtube.com/";
+      document.getElementById('linkpage').style.display = 'none';
+      document.getElementById('framepage').style.display = 'initial';
+      new_tab = "https://www.youtube.com/";
+  })
+  var lgm = document.getElementById('lgm');
+  lgm.addEventListener('click', function () {
+      document.getElementById('error').innerHTML = "";
+      document.getElementById("myframe").src ="https://www.google.com/intl/en-GB/gmail/about/#";
+      document.getElementById('linkpage').style.display = 'none';
+      document.getElementById('framepage').style.display = 'initial';
+      new_tab = "https://www.google.com/intl/en-GB/gmail/about/#"
+  })
+  var lws = document.getElementById('lws');
+  lws.addEventListener('click', function () {
+      document.getElementById('error').innerHTML = "";
+      document.getElementById("myframe").src ="https://web.whatsapp.com/";
+      document.getElementById('linkpage').style.display = 'none';
+      document.getElementById('framepage').style.display = 'initial';
+      new_tab = "https://web.whatsapp.com/";
+  })
+  
 
   var newtab = document.getElementById('newtab');
   newtab.addEventListener('click', function () {
-    chrome.tabs.create({ url: String(document.getElementById('linkinput').value) });
+    chrome.tabs.create({ url: new_tab });
   })
 
   var back = document.getElementById('back');
