@@ -8,6 +8,12 @@
   max-height: 60ch;
   max-width: 60ch;
 }
+#tooltip{
+  right:0;
+  margin-right: 10px;
+  bottom: 15px;
+  position: absolute;
+}
 #framepage {
   display: none;
 }
