@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('framepage').style.display = 'initial';
     new_tab = "https://web.whatsapp.com/";
   })
-  var lgt = document.getElementById('lgt');
+  var lgt = document.getElementById('lsf');
   lgt.addEventListener('click', function () {
     document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://github.com/";
+    document.getElementById("myframe").src = "https://stackoverflow.com/";
     document.getElementById('linkpage').style.display = 'none';
     document.getElementById('framepage').style.display = 'initial';
-    new_tab = "https://github.com/";
+    new_tab = "https://stackoverflow.com/";
   })
   var lam = document.getElementById('lam');
   lam.addEventListener('click', function () {
