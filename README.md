@@ -5,4 +5,4 @@ Use it to watch a video, quickly refer to a dictionary or send a message, all wh
 
 For installing **MiniScreen** extension :
 
-Go to Chrome -> More -> Tools -> Extension -> Load Unpacked -> Select **MiniScreen** Folder ->Update
+Go to Chrome -> More Tools -> Extensions -> Enable developer mode -> Load Unpacked -> Select **MiniScreen** Folder ->Update
