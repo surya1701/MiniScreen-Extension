@@ -5,7 +5,7 @@ Use it to watch a video, quickly refer to a dictionary or send a message, all wh
 
 For installing **MiniScreen** extension :
 
-Use any crx extractor to extract the **MiniScreen-Extension.crx** file, save the folder and follow the steps given below.
+Use a [CRX extractor](https://crxextractor.com/) to extract the **MiniScreen-Extension.crx** file, unzip/save the folder and follow the steps given below.
 
 Chrome -> More Tools -> Extensions -> Enable developer mode -> Load Unpacked -> Select **MiniScreen-Extension** Folder.
 
