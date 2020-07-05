@@ -7,6 +7,14 @@ function is_url(str) {
     return true;
   }
 }
+function visit(link) {
+  document.getElementById('error').innerHTML = "";
+  document.getElementById("myframe").src = link;
+  document.getElementById('linkpage').style.display = 'none';
+  document.getElementById('framepage').style.display = 'initial';
+  $('[data-toggle="tooltip"]').tooltip('show');
+  new_tab = link;
+}
 var new_tab = "";
 document.addEventListener('DOMContentLoaded', function () {
   var link = document.getElementById('link');
@@ -14,71 +22,36 @@ document.addEventListener('DOMContentLoaded', function () {
     if (is_url(String(document.getElementById('linkinput').value))) {
       document.getElementById('error').innerHTML = "Invalid Link !";
     } else {
-      document.getElementById('error').innerHTML = "";
-      document.getElementById("myframe").src = String(document.getElementById('linkinput').value);
-      document.getElementById('linkpage').style.display = 'none';
-      document.getElementById('framepage').style.display = 'initial';
-      $('[data-toggle="tooltip"]').tooltip('show');
-      new_tab = String(document.getElementById('linkinput').value);
+      visit(String(document.getElementById('linkinput').value));
     }
   })
   var lgoogle = document.getElementById('lgoogle');
   lgoogle.addEventListener('click', function () {
-    document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://www.google.com/";
-    document.getElementById('linkpage').style.display = 'none';
-    document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip('show');
-    new_tab = "https://www.google.com/";
+    visit("https://www.google.com/");
   })
   var lyt = document.getElementById('lyt');
   lyt.addEventListener('click', function () {
-    document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://www.youtube.com/";
-    document.getElementById('linkpage').style.display = 'none';
-    document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip('show');
-    new_tab = "https://www.youtube.com/";
+    visit("https://www.youtube.com/");
   })
   var lgm = document.getElementById('lli');
   lgm.addEventListener('click', function () {
-    document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://www.linkedin.com/";
-    document.getElementById('linkpage').style.display = 'none';
-    document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip('show');
-    new_tab = "https://www.linkedin.com/"
+    visit("https://www.linkedin.com/");
   })
   var lws = document.getElementById('lws');
   lws.addEventListener('click', function () {
-    document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://web.whatsapp.com/";
-    document.getElementById('linkpage').style.display = 'none';
-    document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip('show');
-    new_tab = "https://web.whatsapp.com/";
+    visit("https://web.whatsapp.com/");
   })
   var lgt = document.getElementById('lsf');
   lgt.addEventListener('click', function () {
-    document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://stackoverflow.com/";
-    document.getElementById('linkpage').style.display = 'none';
-    document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip('show');
-    new_tab = "https://stackoverflow.com/";
+    visit("https://stackoverflow.com/");
   })
   var lam = document.getElementById('lam');
   lam.addEventListener('click', function () {
-    document.getElementById('error').innerHTML = "";
-    document.getElementById("myframe").src = "https://www.amazon.in/";
-    document.getElementById('linkpage').style.display = 'none';
-    document.getElementById('framepage').style.display = 'initial';
-    $('[data-toggle="tooltip"]').tooltip('show');
-    new_tab = "https://www.amazon.in/";
+    visit("https://www.amazon.in/");
   })
 
-  var newtab = document.getElementById('newtab');
-  newtab.addEventListener('click', function () {
+  var tab = document.getElementById('newtab');
+  tab.addEventListener('click', function () {
     chrome.tabs.create({ url: new_tab });
   })
 
