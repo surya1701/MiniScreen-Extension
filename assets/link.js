@@ -8,7 +8,7 @@ function is_url(str) {
   }
 }
 function visit(link) {
-  document.getElementById('error').innerHTML = "";
+  document.getElementById('error').innerHTML = "Enter complete URL";
   document.getElementById("myframe").src = link;
   document.getElementById('linkpage').style.display = 'none';
   document.getElementById('framepage').style.display = 'initial';
