@@ -1,0 +1,19 @@
+CRX Extractor has been created with the help  of an official Google documentation describing .crx Chrome Extensions file format.
+
+To get a Chrome Extension source code, the utility parses the provided .crx file, extracts 'magic' header and stored code signature.
+
+Along with meta-data, the .crx file contains .zip-archive. This archive contains the extension manifest, source code, popup.html and all related source files.
+
+Want to know more about this tool and about the .CRX file format? 
+
+
+How to use it?
+Drop the .crx file into the placeholder
+Wait until it will be processed
+Click "Download" and get source code as .zip archive with all related metadata
+
+
+How to get .crx Chrome Extension File?
+Head your browser to Chrome WebStore
+Find an extension you want to save, then copy a link from the address line of your browser
+Paste copied link to the field in the right pane and click "OK". Then click appeared button. The download will start immediately.
